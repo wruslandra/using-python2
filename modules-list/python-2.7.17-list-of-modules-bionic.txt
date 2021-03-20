@@ -1,0 +1,244 @@
+Python 2.7.17 (default, Feb 27 2021, 15:10:58) 
+
+===========================================================
+wruslan@hp-elitebook-ub1804-rt64:~$ date
+Sun Mar 21 00:14:25 +08 2021
+
+wruslan@hp-elitebook-ub1804-rt64:~$ uname -a
+Linux hp-elitebook-ub1804-rt64 4.19.148-rt64 #1 SMP PREEMPT RT 
+Wed Oct 7 08:11:43 +08 2020 x86_64 x86_64 x86_64 GNU/Linux
+
+wruslan@hp-elitebook-ub1804-rt64:~$ lsb_release -a
+LSB Version:	core-9.20170808ubuntu1-noarch:security-9.20170808ubuntu1-noarch
+Distributor ID:	Ubuntu
+Description:	Ubuntu 18.04.5 LTS
+Release:	18.04
+Codename:	bionic
+wruslan@hp-elitebook-ub1804-rt64:~$ 
+
+===========================================================
+wruslan@hp-elitebook-ub1804-rt64:~$ python
+Python 2.7.17 (default, Feb 27 2021, 15:10:58) 
+[GCC 7.5.0] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+>>> import os
+>>> import sys
+>>> import time
+>>> import timeit
+>>> import dateutil
+>>> 
+>>> import numpy
+>>> import scipy
+>>> import matplotlib
+>>> import matplotlib.pyplot
+>>> import pylab
+>>> 
+>>> import pandas
+>>> import h5py
+>>> import cython
+>>> import PyQt4
+>>> import PyQt5
+>>> import PyQt4.Qwt5
+>>> import threading
+>>> import multiprocessing
+>>> 
+>>> import torch
+>>> import torchvision
+>>> import seaborn
+>>> import sklearn
+>>> import theano
+>>> import tensorflow
+>>> import tornado
+>>> import keras
+ImportError: Keras requires TensorFlow 2.2 or higher. 
+>>> 
+>>> help()
+
+Welcome to Python 2.7!  This is the online help utility.
+
+If this is your first time using Python, you should definitely check out
+the tutorial on the Internet at http://docs.python.org/2.7/tutorial/.
+
+Enter the name of any module, keyword, or topic to get help on writing
+Python programs and using Python modules.  To quit this help utility and
+return to the interpreter, just type "quit".
+
+To get a list of available modules, keywords, or topics, type "modules",
+"keywords", or "topics".  Each module also comes with a one-line summary
+of what it does; to list the modules whose summaries contain a given word
+such as "spam", type "modules spam".
+
+help> modules
+
+Please wait a moment while I gather a list of all available modules...
+
+BaseHTTPServer      brain_numpy         jupyter_client      runpy
+Bastion             brain_pkg_resources jupyter_core        scandir
+CDROM               brain_pytest        k8000               scanext
+CGIHTTPServer       brain_qt            keras               sched
+Canvas              brain_re            keras_applications  scilab
+ConfigParser        brain_six           keras_preprocessing scipy
+Cookie              brain_ssl           keyring             sciscipy
+Crypto              brain_subprocess    keyrings            scour
+Cython              brain_threading     keyword             script
+DLFCN               brain_typing        kiwisolver          seaborn
+Dialog              brain_uuid          lazy_object_proxy   secretstorage
+DocXMLRPCServer     bs4                 lib2to3             select
+FileDialog          bsddb               libfuturize         sets
+FixTk               builtins            libpasteurize       setuptools
+HTMLParser          bz2                 linecache           sgmllib
+IN                  cPickle             linuxaudiodev       sha
+IPython             cProfile            locale              shelve
+MimeWriter          cStringIO           logging             shlex
+OpenSSL             cachetools          logilab             shutil
+PIL                 caffe2              lsb_release         signal
+Plframe             cairo               lxml                simplegeneric
+Pltk_init           calendar            macpath             singledispatch
+PyPDF2              certifi             macurl2path         singledispatch_helpers
+PyQt4               cgi                 mailbox             sip
+PyQt5               cgitb               mailcap             sipconfig
+Queue               chardet             markdown            sipconfig_d
+ScrolledText        chunk               markupbase          sipconfig_nd
+SimpleDialog        cloudpickle         markupsafe          sipdistutils
+SimpleHTTPServer    cmath               marshal             site
+SimpleXMLRPCServer  cmd                 math                sitecustomize
+SocketServer        code                matplotlib          six
+StringIO            codecs              mccabe              skimage
+TYPES               codeop              md5                 sklearn
+TclSup              collections         mdp                 smtpd
+Tix                 colorsys            mercurial           smtplib
+Tkconstants         commands            mhlib               sndhdr
+Tkdnd               compileall          mimetools           socket
+Tkinter             compiler            mimetypes           socketserver
+UserDict            concurrent          mimify              sphinx
+UserList            configparser        mistune             spwd
+UserString          contextlib          mmap                spyder
+_LWPCookieJar       cookielib           mock                spyder_breakpoints
+_MozillaCookieJar   copy                modulefinder        spyder_io_dcm
+_Pltk_init          copy_reg            mpl_toolkits        spyder_io_hdf5
+__builtin__         copyreg             multifile           spyder_profiler
+__future__          crypt               multiprocessing     spyder_pylint
+_abcoll             cryptography        mutex               sqlite3
+_ast                csv                 mx                  sre
+_bisect             ctypes              nbconvert           sre_compile
+_bsddb              cupsext             nbformat            sre_constants
+_cffi_backend       curses              netrc               sre_parse
+_codecs             cycler              networkx            ssl
+_codecs_cn          cython              new                 stat
+_codecs_hk          cythonmagic         nis                 statvfs
+_codecs_iso2022     dataclasses         nlp                 storemagic
+_codecs_jp          datetime            nntplib             string
+_codecs_kr          dateutil            ntpath              stringold
+_codecs_tw          dbhash              nturl2path          stringprep
+_collections        dbm                 numbers             strop
+_csv                dbtexmf             numpy               struct
+_ctypes             dbus                numpydoc            subprocess
+_ctypes_test        decimal             oauth2              subprocess32
+_curses             decorator           oauthlib            sunau
+_curses_panel       dicom               olefile             sunaudio
+_dbus_bindings      difflib             opcode              symbol
+_dbus_glib_bindings dill                operator            sympyprinting
+_dummy_thread       dircache            opt_einsum          symtable
+_elementtree        dis                 optparse            sys
+_functools          distutils           os                  sysconfig
+_hashlib            docs                os2emxpath          syslog
+_heapq              doctest             ossaudiodev         tabnanny
+_hotshot            docutils            pandas              talloc
+_io                 dsextras            pandocfilters       tarfile
+_json               dumbdbm             pango               telnetlib
+_k8000              dummy_thread        pangocairo          tempfile
+_locale             dummy_threading     parser              tensorboard
+_lsprof             easy_install        parso               tensorflow
+_markupbase         echotorch           past                tensorflow_core
+_md5                email               pasta               tensorflow_estimator
+_multibytecodec     encodings           pathlib2            termcolor
+_multiprocessing    ensurepip           pathtools           termios
+_osx_support        entrypoints         pbr                 tesserocr
+_plplotc            enum                pcardext            test
+_posixsubprocess    errno               pdb                 testpath
+_pyio               evernote            pexpect             tests
+_pyk8055            exceptions          pickle              textwrap
+_random             fcntl               pickleshare         theano
+_scandir            filecmp             pickletools         this
+_sha                fileinput           pip                 thread
+_sha256             filelock            pipes               threading
+_sha512             fnmatch             pkg_resources       thrift
+_socket             formatter           pkgutil             time
+_sqlite3            fpformat            platform            timeit
+_sre                fractions           plistlib            tkColorChooser
+_ssl                ftplib              plplot              tkCommonDialog
+_strptime           funcsigs            plplotc             tkFileDialog
+_struct             functools           popen2              tkFont
+_symtable           functools32         poplib              tkMessageBox
+_sysconfigdata      future              posix               tkSimpleDialog
+_sysconfigdata_d    future_builtins     posixfile           tkinter
+_sysconfigdata_nd   gast                posixpath           toaiff
+_testcapi           gc                  pprint              token
+_thread             genericpath         profile             tokenize
+_threading_local    getopt              prompt_toolkit      tools
+_tkinter            getpass             pstats              torch
+_warnings           gettext             psutil              torchvision
+_weakref            gi                  pty                 tornado
+_weakrefset         gio                 ptyprocess          tqdm
+abc                 glib                pwd                 trace
+absl                glob                py_compile          traceback
+aifc                gobject             pyarrow             traitlets
+alabaster           google_auth_oauthlib pyasn1              ttk
+antigravity         grp                 pyasn1_modules      tty
+anydbm              grpc                pybrain             turtle
+apt                 gtk                 pyclbr              types
+apt_inst            gtkunixprint        pycodestyle         typing
+apt_pkg             guidata             pydoc               unicodedata
+aptsources          guiqwt              pydoc_data          unittest
+argparse            gzip                pyexpat             urllib
+array               h5py                pyflakes            urllib2
+asn1crypto          hashlib             pygments            urllib3
+ast                 heapq               pygtk               urlparse
+astor               hgdemandimport      pygtkcompat         user
+astroid             hgext               pyk8055             uu
+asynchat            hgext3rd            pylab               uuid
+asyncore            hmac                pylint              warnings
+atexit              hotshot             pynotify            watchdog
+atk                 hpmudext            pyparsing           wave
+audiodev            html                pypdfocr            wcwidth
+audioop             html5lib            pysvn               weakref
+autoreload          htmlentitydefs      pytils              webbrowser
+babel               htmllib             pytz                webencodings
+backports           http                pywt                werkzeug
+backports_abc       httplib             pyximport           wheel
+base64              httplib2            qtawesome           whichdb
+bdb                 idna                qtconsole           winreg
+bimdp               ihooks              qtpy                wrapt
+bin                 imagesize           queue               wsgiref
+binascii            imaplib             quopri              wx
+binhex              imghdr              qwt                 wxmpl
+bisect              imp                 random              wxversion
+bleach              importlib           re                  xdg
+boost               imputil             readline            xdrlib
+brain_attrs         imutils             reportlab           xml
+brain_builtin_inference inspect             repr                xmllib
+brain_collections   io                  reprlib             xmlrpc
+brain_curses        ipaddress           requests            xmlrpclib
+brain_dateutil      ipykernel           requests_oauthlib   xxhash
+brain_fstrings      ipykernel_launcher  resource            xxsubtype
+brain_functools     ipython_genutils    rexec               yaml
+brain_gi            isort               rfc822              yapps
+brain_hashlib       itertools           rlcompleter         zbar
+brain_io            jedi                rmagic              zipfile
+brain_mechanize     jinja2              robotparser         zipimport
+brain_multiprocessing json                roman               zlib
+brain_namedtuple_enum jsonschema          rope                zmq
+brain_nose          jupyter             rsa                 
+
+Enter any module name to get more help.  Or, type "modules spam" to search
+for modules whose descriptions contain the word "spam".
+
+help> 
+
+[15]+  Stopped                 python
+wruslan@hp-elitebook-ub1804-rt64:~$ 
+===========================================================
+ALHAMDULILLAH 3 TIMES WRY.
+===========================================================
+
