@@ -31,6 +31,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> import k8055
 >>>
 >>> import PyQt4
+>>> import PyQt4.Qwt5
 >>> import PyQt5
 >>> 
 >>> import pandas
@@ -39,15 +40,26 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> import threading
 >>> import multiprocessing
 >>> 
+>>> import torch
+>>> import torchvision  
+>>> import theano
 >>> import seaborn
 >>> import sklearn
->>> import tensorflow
->>>
->>> import keras
-Traceback (most recent call last):
-       ImportError: Keras requires TensorFlow 2.2 or higher. 
-       Install TensorFlow via `pip install tensorflow`
->>> 
+>>> import tensorflow (ver 2.1.0)
+>>> import tornado
+>>> import keras :==> Keras requires TensorFlow 2.2 or higher. 
+>>
+Requirement already satisfied:
+tensorflow in /usr/local/lib/python2.7/dist-packages (2.1.0)
+============================================================
+drwxr-sr-x  10 root staff   4096 Nov  4 08:44 tensorboard
+drwxr-sr-x   2 root staff   4096 Nov  4 08:44 tensorboard-2.1.0.dist-info
+drwxr-sr-x   2 root staff   4096 Nov  4 08:44 tensorflow
+drwxr-sr-x   2 root staff   4096 Nov  4 08:44 tensorflow-2.1.0.dist-info
+drwxr-sr-x  10 root staff   4096 Nov  4 08:44 tensorflow_core
+drwxr-sr-x   4 root staff   4096 Nov  4 08:44 tensorflow_estimator
+drwxr-sr-x   2 root staff   4096 Nov  4 08:44 tensorflow_estimator-2.1.0.dist-info
+
 ===========================================================
 >>> help()
 
@@ -70,146 +82,147 @@ help> modules
 
 Please wait a moment while I gather a list of all available modules...
  
-BaseHTTPServer      cProfile            keras               scour
-Bastion             cStringIO           keras_applications  seaborn
-CDROM               cachetools          keras_preprocessing select
-CGIHTTPServer       caffe2              keyring             serial
-Canvas              cairo               keyword             sets
-ConfigParser        calendar            kiwisolver          setuptools
-Cookie              certifi             lib2to3             sgmllib
-Crypto              cffi                libfuturize         sha
-Cython              cgi                 libpasteurize       shelve
-DLFCN               cgitb               libsvn              shlex
-Dialog              chardet             libusb1             shutil
-DocXMLRPCServer     chunk               linecache           signal
-FileDialog          click               linecache2          simplejson
-FixTk               cmath               linuxaudiodev       singledispatch
-HTMLParser          cmd                 locale              singledispatch_helpers
-IN                  code                logging             sip
-MimeWriter          codecs              lsb_release         sipconfig
-PIL                 codeop              lxml                sipconfig_d
-PyQt4               collections         macpath             sipconfig_nd
-PyQt5               colorama            macurl2path         sipdistutils
-Pyro                colorsys            mailbox             site
-Queue               colour              mailcap             sitecustomize
-RDF                 commands            markdown            six
-Redland             compileall          markupbase          sklearn
-ScrolledText        compiler            markupsafe          smtpd
-SimpleDialog        concurrent          marshal             smtplib
-SimpleHTTPServer    configparser        math                sndhdr
-SimpleXMLRPCServer  contextlib          matplotlib          socket
-SocketServer        contextlib2         md5                 socketserver
-StringIO            cookielib           mdp                 soupsieve
-TYPES               copy                mercurial           spwd
-Tix                 copy_reg            mhlib               sqlite3
-Tkconstants         crypt               mimetools           sre
-Tkdnd               cryptography        mimetypes           sre_compile
-Tkinter             csv                 mimify              sre_constants
-UserDict            ctypes              mmap                sre_parse
-UserList            curses              mock                ssl
-UserString          cycler              modulefinder        sslpsk
-_LWPCookieJar       cython              moz_version         stat
-_MozillaCookieJar   dataclasses         mpl_toolkits        statvfs
-_Redland            datetime            multifile           string
-__builtin__         dateutil            multiprocess        stringold
-__future__          dbhash              multiprocessing     stringprep
-_abcoll             dbm                 mutex               strop
-_ast                dbus                mvcopyreg           struct
-_bisect             decimal             nacl                structure
-_bsddb              decorator           netifaces           subprocess
-_cffi_backend       difflib             netrc               subprocess32
-_codecs             dill                network             sunau
-_codecs_cn          dircache            networkx            sunaudio
-_codecs_hk          dis                 new                 svn
-_codecs_iso2022     distlib             nis                 symbol
-_codecs_jp          distutils           nlp                 symtable
-_codecs_kr          docs                nntplib             sys
-_codecs_tw          doctest             nose                sysconfig
-_collections        docutils            ntpath              syslog
-_csv                doxypypy            nturl2path          tabnanny
-_ctypes             dsextras            numbers             talloc
-_ctypes_test        dumbdbm             numpy               tarfile
-_curses             dummy_thread        oauthlib            telnetlib
-_curses_panel       dummy_threading     olefile             tempfile
-_dbus_bindings      easy_install        opcode              tensorboard
-_dbus_glib_bindings echotorch           operator            tensorflow
-_dummy_thread       email               opt_einsum          tensorflow_core
-_elementtree        encodings           optparse            tensorflow_estimator
-_functools          ensurepip           os                  termcolor
-_hashlib            entrypoints         os2emxpath          termios
-_heapq              enum                ossaudiodev         test
-_hotshot            errno               pandas              textwrap
-_io                 exceptions          pango               theano
-_json               ez_setup            pangocairo          this
-_k8000              fcntl               paramiko            thread
-_k8055              filecmp             parser              threading
-_locale             fileinput           past                time
-_lsprof             filelock            pasta               timeit
-_markupbase         fire                pathlib2            tinynetrc
-_md5                flask               pathspec            tkColorChooser
-_multibytecodec     flask_login         pdb                 tkCommonDialog
-_multiprocessing    fnmatch             pickle              tkFileDialog
-_osx_support        formatter           pickletools         tkFont
-_posixsubprocess32  fpformat            pip                 tkMessageBox
-_pyio               fractions           pipdate             tkSimpleDialog
-_pyk8000            ftplib              pipes               tkinter
-_pyk8055            funcsigs            pkg_resources       toaiff
-_random             functools           pkgutil             token
-_scandir            functools32         platform            tokenize
-_sha                future              plistlib            torch
-_sha256             future_builtins     ply                 torchvision
-_sha512             gast                popen2              tqdm
-_socket             gc                  poplib              trace
-_sqlite3            genericpath         posix               traceback
-_sre                genshi              posixfile           traceback2
-_ssl                getopt              posixpath           ttk
-_strptime           getpass             pprint              tty
-_struct             gettext             profile             turtle
-_symtable           gi                  pstats              types
-_sysconfigdata      gio                 pty                 typing
-_sysconfigdata_d    glib                pwd                 unicodedata
-_sysconfigdata_nd   glob                py_compile          unittest
-_testcapi           gobject             pyarrow             unittest2
-_thread             google_auth_oauthlib pyasn1              urllib
-_threading_local    grp                 pyasn1_modules      urllib2
-_tkinter            grpc                pybrain             urllib3
-_warnings           gtk                 pyclbr              urlparse
-_weakref            gtkunixprint        pycparser           usb1
-_weakrefset         gzip                pydoc               user
-abc                 h5py                pydoc_data          uu
-absl                hashlib             pyexpat             uuid
-aifc                heapq               pyflakes            virtualenv
-antigravity         hgdemandimport      pygments            warnings
-anydbm              hgext               pygtk               wave
-appdirs             hgext3rd            pygtkcompat         weakref
-apt                 hmac                pyinotify           webbrowser
-apt_inst            hotshot             pyk8000             webencodings
-apt_pkg             html                pyk8055             werkzeug
-aptsources          html5lib            pylab               wheel
-argparse            htmlentitydefs      pymodbus            whichdb
-array               htmllib             pyparsing           winreg
-ast                 http                pytz                wrapt
-astor               httplib             pyximport           wsgiref
-asynchat            hwlatdetect         queue               wx
-asyncore            idlelib             quopri              wxversion
-atexit              idna                random              xdg
-atk                 ihooks              re                  xdrlib
-audiodev            imaplib             readline            xml
-audioop             imghdr              repr                xmllib
-backports           imp                 reprlib             xmlrpc
-base64              importlib           requests            xmlrpclib
-bcrypt              importlib_metadata  requests_oauthlib   xxhash
-bdb                 importlib_resources resource            xxsubtype
-bimdp               imputil             rexec               yaml
-bin                 inspect             rfc822              yapps
-binascii            io                  rlcompleter         zeroconf
-binhex              ipaddress           robotparser         zipfile
-bisect              itertools           roman               zipimport
-bs4                 itsdangerous        rsa                 zipp
-bsddb               jinja2              runpy               zlib
-builtins            json                scandir             
-bz2                 k8000               sched               
-cPickle             k8055               scipy               
+BaseHTTPServer      cProfile            k8055               scipy
+Bastion             cStringIO           keras               scour
+CDROM               cachetools          keras_applications  script
+CGIHTTPServer       caffe2              keras_preprocessing seaborn
+Canvas              cairo               keyring             select
+ConfigParser        calendar            keyword             serial
+Cookie              certifi             kiwisolver          sets
+Crypto              cffi                lib2to3             setuptools
+Cython              cgi                 libfuturize         sgmllib
+DLFCN               cgitb               libpasteurize       sha
+Dialog              chardet             libsvn              shelve
+DocXMLRPCServer     chunk               libusb1             shlex
+FileDialog          click               linecache           shutil
+FixTk               cmath               linecache2          signal
+HTMLParser          cmd                 linuxaudiodev       simplejson
+IN                  code                locale              singledispatch
+MimeWriter          codecs              logging             singledispatch_helpers
+PIL                 codeop              lsb_release         sip
+PyQt4               collections         lxml                sipconfig
+PyQt5               colorama            macpath             sipconfig_d
+Pyro                colorsys            macurl2path         sipconfig_nd
+Queue               colour              mailbox             sipdistutils
+RDF                 commands            mailcap             site
+Redland             compileall          markdown            sitecustomize
+ScrolledText        compiler            markupbase          six
+SimpleDialog        concurrent          markupsafe          sklearn
+SimpleHTTPServer    configparser        marshal             smtpd
+SimpleXMLRPCServer  contextlib          math                smtplib
+SocketServer        contextlib2         matplotlib          sndhdr
+StringIO            cookielib           md5                 socket
+TYPES               copy                mdp                 socketserver
+Tix                 copy_reg            mercurial           soupsieve
+Tkconstants         copyreg             mhlib               spwd
+Tkdnd               crypt               mimetools           sqlite3
+Tkinter             cryptography        mimetypes           sre
+UserDict            csv                 mimify              sre_compile
+UserList            ctypes              mmap                sre_constants
+UserString          curses              mock                sre_parse
+_LWPCookieJar       cycler              modulefinder        ssl
+_MozillaCookieJar   cython              moz_version         sslpsk
+_Redland            dataclasses         mpl_toolkits        stat
+__builtin__         datetime            multifile           statvfs
+__future__          dateutil            multiprocess        string
+_abcoll             dbhash              multiprocessing     stringold
+_ast                dbm                 mutex               stringprep
+_bisect             dbus                mvcopyreg           strop
+_bsddb              decimal             nacl                struct
+_cffi_backend       decorator           netifaces           structure
+_codecs             difflib             netrc               subprocess
+_codecs_cn          dill                network             subprocess32
+_codecs_hk          dircache            networkx            sunau
+_codecs_iso2022     dis                 new                 sunaudio
+_codecs_jp          distlib             nis                 svn
+_codecs_kr          distutils           nlp                 symbol
+_codecs_tw          docs                nntplib             symtable
+_collections        doctest             nose                sys
+_csv                docutils            ntpath              sysconfig
+_ctypes             doxypypy            nturl2path          syslog
+_ctypes_test        dsextras            numbers             tabnanny
+_curses             dumbdbm             numpy               talloc
+_curses_panel       dummy_thread        oauthlib            tarfile
+_dbus_bindings      dummy_threading     olefile             telnetlib
+_dbus_glib_bindings easy_install        opcode              tempfile
+_dummy_thread       echotorch           operator            tensorboard
+_elementtree        email               opt_einsum          tensorflow
+_functools          encodings           optparse            tensorflow_core
+_hashlib            ensurepip           os                  tensorflow_estimator
+_heapq              entrypoints         os2emxpath          termcolor
+_hotshot            enum                ossaudiodev         termios
+_io                 errno               pandas              test
+_json               exceptions          pango               textwrap
+_k8000              ez_setup            pangocairo          theano
+_k8055              fcntl               paramiko            this
+_locale             filecmp             parser              thread
+_lsprof             fileinput           past                threading
+_markupbase         filelock            pasta               time
+_md5                fire                pathlib2            timeit
+_multibytecodec     flask               pathspec            tinynetrc
+_multiprocessing    flask_login         pdb                 tkColorChooser
+_osx_support        fnmatch             pickle              tkCommonDialog
+_posixsubprocess32  formatter           pickletools         tkFileDialog
+_pyio               fpformat            pip                 tkFont
+_pyk8000            fractions           pipdate             tkMessageBox
+_pyk8055            ftplib              pipes               tkSimpleDialog
+_random             funcsigs            pkg_resources       tkinter
+_scandir            functools           pkgutil             toaiff
+_sha                functools32         platform            token
+_sha256             future              plistlib            tokenize
+_sha512             future_builtins     ply                 tools
+_socket             gast                popen2              torch
+_sqlite3            gc                  poplib              torchvision
+_sre                genericpath         posix               tornado
+_ssl                genshi              posixfile           tqdm
+_strptime           getopt              posixpath           trace
+_struct             getpass             pprint              traceback
+_symtable           gettext             profile             traceback2
+_sysconfigdata      gi                  pstats              ttk
+_sysconfigdata_d    gio                 pty                 tty
+_sysconfigdata_nd   glib                pwd                 turtle
+_testcapi           glob                py_compile          types
+_thread             gobject             pyarrow             typing
+_threading_local    google_auth_oauthlib pyasn1              unicodedata
+_tkinter            googlesearch        pyasn1_modules      unittest
+_warnings           grp                 pybrain             unittest2
+_weakref            grpc                pyclbr              urllib
+_weakrefset         gtk                 pycparser           urllib2
+abc                 gtkunixprint        pydoc               urllib3
+absl                gzip                pydoc_data          urlparse
+aifc                h5py                pyexpat             usb1
+antigravity         hashlib             pyflakes            user
+anydbm              heapq               pygments            uu
+appdirs             hgdemandimport      pygtk               uuid
+apt                 hgext               pygtkcompat         virtualenv
+apt_inst            hgext3rd            pyinotify           warnings
+apt_pkg             hmac                pyk8000             wave
+aptsources          hotshot             pyk8055             weakref
+argparse            html                pylab               webbrowser
+array               html5lib            pymodbus            webencodings
+ast                 htmlentitydefs      pyparsing           werkzeug
+astor               htmllib             pytils              wheel
+asynchat            http                pytz                whichdb
+asyncore            httplib             pyximport           winreg
+atexit              hwlatdetect         queue               wrapt
+atk                 idlelib             quopri              wsgiref
+audiodev            idna                random              wx
+audioop             ihooks              re                  wxversion
+backports           imaplib             readline            xdg
+backports_abc       imghdr              repr                xdrlib
+base64              imp                 reprlib             xml
+bcrypt              importlib           requests            xmllib
+bdb                 importlib_metadata  requests_oauthlib   xmlrpc
+bimdp               importlib_resources resource            xmlrpclib
+bin                 imputil             rexec               xxhash
+binascii            inspect             rfc822              xxsubtype
+binhex              io                  rlcompleter         yaml
+bisect              ipaddress           robotparser         yapps
+bs4                 itertools           roman               zeroconf
+bsddb               itsdangerous        rsa                 zipfile
+builtins            jinja2              runpy               zipimport
+bz2                 json                scandir             zipp
+cPickle             k8000               sched               zlib
 
 Enter any module name to get more help.  Or, type "modules spam" to search
 for modules whose descriptions contain the word "spam".
